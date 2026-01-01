@@ -137,3 +137,73 @@ footer {
 .menu-card p {
   font-size: 1rem;
 }
+/* ===== MENU PAGE STYLING ===== */
+
+.menu-wrapper {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.menu-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.menu-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.menu-cards {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+}
+
+.menu-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(8px);
+  padding: 35px 25px;
+  border-radius: 26px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 25px 45px rgba(0,0,0,0.08);
+  transition: all 0.45s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-14px) scale(1.02);
+  background: #FFF;
+}
+
+.menu-card h2 {
+  margin-top: 14px;
+  font-size: 1.4rem;
+}
+
+.menu-card p {
+  margin-top: 8px;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+/* ===== FLOATING CARD ANIMATION ===== */
+.floating-card {
+  animation: gentleFloat 6s ease-in-out infinite;
+}
+
+.floating-card:nth-child(2) { animation-delay: 1s; }
+.floating-card:nth-child(3) { animation-delay: 2s; }
+.floating-card:nth-child(4) { animation-delay: 3s; }
+.floating-card:nth-child(5) { animation-delay: 4s; }
+
+@keyframes gentleFloat {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+.emoji {
+  font-size: 2rem;
+}
