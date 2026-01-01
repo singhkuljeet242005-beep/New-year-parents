@@ -3,53 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <title>Memories</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
+<body class="memories-page">
 
-<body>
-
-<audio id="bgMusic" autoplay loop>
-  <source src="music.mp3" type="audio/mpeg">
+<!-- Floating music button -->
+<button id="musicBtn">🎵</button>
+<audio id="bgMusic" loop>
+  <source src="music/memories.mp3" type="audio/mpeg">
 </audio>
 
-<button class="music-btn" onclick="toggleMusic()">🔊</button>
+<h1 class="page-title">Memories</h1>
+<p class="page-subtitle">Moments that quietly shaped me</p>
 
-<div class="floating orb1"></div>
-<div class="floating orb2"></div>
-<div class="floating orb3"></div>
+<div class="memories-container">
 
-<section class="memories-wrapper">
-
-  <h1 class="page-title reveal show">Memories</h1>
-  <p class="subtitle reveal show">Moments that live forever</p>
-
-  <div class="memory reveal show tilt-left">
-    <img src="images/mem1.jpeg">
-    <span>A beginning filled with warmth</span>
+  <div class="memory-card left">
+    <img src="images/mem1.jpg">
+    <p>A beginning filled with warmth</p>
   </div>
 
-  <div class="memory reveal show tilt-right">
-    <img src="images/mem2.jpeg">
-    <span>Smiles that made everything lighter</span>
+  <div class="memory-card right">
+    <img src="images/mem2.jpg">
+    <p>Smiles that made everything lighter</p>
   </div>
 
-  <div class="memory reveal show tilt-left">
-    <img src="images/mem3.jpeg">
-    <span>Days we didn’t know would matter this much</span>
+  <div class="memory-card left">
+    <img src="images/mem3.jpg">
+    <p>Days we didn’t know would matter this much</p>
   </div>
 
-  <div class="memory reveal show tilt-right">
-    <img src="images/mem4.jpeg">
-    <span>Love in its simplest form</span>
+  <div class="memory-card right">
+    <img src="images/mem4.jpg">
+    <p>Moments that feel like home</p>
   </div>
 
-  <div class="memory reveal show final">
-    <img src="images/mem5.jpeg">
-    <span>Forever grateful 🤍</span>
+  <div class="memory-card left">
+    <img src="images/mem5.jpg">
+    <p>Forever grateful for memories like these</p>
   </div>
 
-</section>
+</div>
+
+<footer>
+  Made with love by your child 🌸
+</footer>
 
 <script src="script.js"></script>
 </body>
