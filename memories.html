@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Memories</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<audio id="bgMusic" autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()">🔊</button>
+
+<div class="floating orb1"></div>
+<div class="floating orb2"></div>
+<div class="floating orb3"></div>
+
+<section class="memories-wrapper">
+
+  <h1 class="page-title reveal">Memories</h1>
+  <p class="subtitle reveal">Moments that live forever</p>
+
+  <div class="memory reveal tilt-left">
+    <img src="images/mem1.jpeg">
+    <span>A beginning filled with warmth</span>
+  </div>
+
+  <div class="memory reveal tilt-right">
+    <img src="images/mem2.jpeg">
+    <span>Smiles that made everything lighter</span>
+  </div>
+
+  <div class="memory reveal tilt-left">
+    <img src="images/mem3.jpeg">
+    <span>Days we didn’t know would matter this much</span>
+  </div>
+
+  <div class="memory reveal tilt-right">
+    <img src="images/mem4.jpeg">
+    <span>Love in its simplest form</span>
+  </div>
+
+  <div class="memory reveal final">
+    <img src="images/mem5.jpeg">
+    <span>Forever grateful 🤍</span>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
