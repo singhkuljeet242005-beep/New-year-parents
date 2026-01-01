@@ -341,3 +341,13 @@ footer {
   font-size: 1.1rem;
   cursor: pointer;
 }
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
