@@ -1,1 +1,110 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Georgia', serif;
+}
 
+body {
+  background: #F6F1EB;
+  color: #3A2F2A;
+  overflow-x: hidden;
+}
+
+/* ===== SMOOTH PAGE LOAD ===== */
+body {
+  animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ===== FLOATING BACKGROUND ELEMENTS ===== */
+.floating {
+  position: fixed;
+  width: 14px;
+  height: 14px;
+  background: rgba(214, 196, 168, 0.6);
+  border-radius: 50%;
+  animation: float 12s infinite ease-in-out;
+  z-index: -1;
+}
+
+@keyframes float {
+  0% { transform: translateY(100vh) scale(0.6); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  padding: 14px 28px;
+  background: #D6C4A8;
+  border: none;
+  color: #3A2F2A;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  background: #B89B5E;
+  color: white;
+}
+
+/* ===== CONTAINERS ===== */
+.section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+/* ===== HEADINGS ===== */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ===== IMAGE STYLING ===== */
+img {
+  max-width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* ===== FADE ON SCROLL ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  padding: 40px;
+  background: #EADFD1;
+  text-align: center;
+  font-size: 0.9rem;
+}
