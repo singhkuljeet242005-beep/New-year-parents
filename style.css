@@ -351,3 +351,8 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+/* SAFETY: ensure memories page is visible */
+.memories-wrapper .reveal {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
