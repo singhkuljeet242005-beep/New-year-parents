@@ -2,50 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Choose a Moment</title>
+  <title>Moments</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Floating elements -->
-  <div class="floating" style="left:15%; animation-delay: 0s;"></div>
-  <div class="floating" style="left:45%; animation-delay: 3s;"></div>
-  <div class="floating" style="left:75%; animation-delay: 6s;"></div>
+  <!-- Floating background dots -->
+  <div class="floating" style="left:12%; animation-delay: 0s;"></div>
+  <div class="floating" style="left:40%; animation-delay: 3s;"></div>
+  <div class="floating" style="left:68%; animation-delay: 6s;"></div>
 
-  <section class="section reveal active">
-    <h1>Take Your Time</h1>
-    <p>
-      Each page is a small feeling.  
-      You can open them in any order you like.
+  <section class="section menu-wrapper reveal active">
+    <h1 class="menu-title">Take Your Time</h1>
+    <p class="menu-subtitle">
+      Every page is a quiet feeling.  
+      Open them slowly, in any order you wish.
     </p>
 
-    <br><br>
+    <div class="menu-cards">
 
-    <div class="menu-grid">
-
-      <div class="menu-card" onclick="location.href='newyear.html'">
-        <h2>🌸 New Year Letter</h2>
-        <p>A message straight from my heart</p>
+      <div class="menu-card floating-card" onclick="location.href='newyear.html'">
+        <span class="emoji">🌸</span>
+        <h2>New Year Letter</h2>
+        <p>A message written with love</p>
       </div>
 
-      <div class="menu-card" onclick="location.href='memories.html'">
-        <h2>📸 Memories</h2>
-        <p>Moments that live forever</p>
+      <div class="menu-card floating-card" onclick="location.href='memories.html'">
+        <span class="emoji">📸</span>
+        <h2>Memories</h2>
+        <p>Moments that stay forever</p>
       </div>
 
-      <div class="menu-card" onclick="location.href='cute.html'">
-        <h2>🤍 Gratitude</h2>
+      <div class="menu-card floating-card" onclick="location.href='cute.html'">
+        <span class="emoji">🤍</span>
+        <h2>Gratitude</h2>
         <p>Things I never say enough</p>
       </div>
 
-      <div class="menu-card" onclick="location.href='funny.html'">
-        <h2>😄 Little Smiles</h2>
+      <div class="menu-card floating-card" onclick="location.href='funny.html'">
+        <span class="emoji">😄</span>
+        <h2>Little Smiles</h2>
         <p>Because laughter matters</p>
       </div>
 
-      <div class="menu-card" onclick="location.href='final.html'">
-        <h2>✨ One Last Thing</h2>
+      <div class="menu-card floating-card" onclick="location.href='final.html'">
+        <span class="emoji">✨</span>
+        <h2>One Last Thing</h2>
         <p>A gentle ending</p>
       </div>
 
