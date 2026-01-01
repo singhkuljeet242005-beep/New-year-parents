@@ -108,3 +108,32 @@ footer {
   text-align: center;
   font-size: 0.9rem;
 }
+/* ===== MENU GRID ===== */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.menu-card {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.menu-card:hover {
+  transform: translateY(-10px);
+  background: #FFF;
+}
+
+.menu-card h2 {
+  margin-bottom: 10px;
+}
+
+.menu-card p {
+  font-size: 1rem;
+}
