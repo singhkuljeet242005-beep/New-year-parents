@@ -356,3 +356,83 @@ footer {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
+/* ===== MEMORIES PAGE ===== */
+
+.memories-page {
+  background: #f6efe6;
+  font-family: 'Georgia', serif;
+  color: #3b2f2f;
+}
+
+.page-title {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 3rem;
+}
+
+.page-subtitle {
+  text-align: center;
+  margin-bottom: 80px;
+  opacity: 0.8;
+}
+
+.memories-container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.memory-card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 120px;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.memory-card img {
+  width: 55%;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.memory-card p {
+  width: 45%;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.memory-card.right {
+  flex-direction: row-reverse;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Music button */
+#musicBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #e3d2b8;
+  border: none;
+  padding: 14px 18px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px;
+  background: #eadfce;
+  margin-top: 100px;
+}
